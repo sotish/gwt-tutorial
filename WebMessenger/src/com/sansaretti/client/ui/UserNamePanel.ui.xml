@@ -1,0 +1,17 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<g:HTMLPanel>
+		<g:HorizontalPanel>
+			<g:Cell verticalAlignment="ALIGN_MIDDLE">
+				<g:Label>Adınızı Giriniz : </g:Label>
+			</g:Cell>
+			<g:Cell verticalAlignment="ALIGN_MIDDLE">
+				<g:TextBox ui:field="adTextBox"></g:TextBox>
+			</g:Cell>
+			<g:Cell verticalAlignment="ALIGN_MIDDLE">
+				<g:Button ui:field="baslaButton">Başla</g:Button>
+			</g:Cell>
+		</g:HorizontalPanel>
+	</g:HTMLPanel>
+</ui:UiBinder> 
