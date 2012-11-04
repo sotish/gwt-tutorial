@@ -63,7 +63,7 @@ public class UserNamePanel extends Composite {
 					/*
 					 * UserNamePanel kullanicilarini uyar.
 					 */
-					girisListener.girisDurumu(false);
+					girisListener.girisDurumu(false, null);
 					return;
 				}
 
@@ -71,7 +71,7 @@ public class UserNamePanel extends Composite {
 				 * kullanici gecerli bir isim girdi. UserNamePanel
 				 * kullanicilarini uyar.
 				 */
-				girisListener.girisDurumu(true);
+				girisListener.girisDurumu(true, userName);
 			}
 		});
 	}
@@ -81,6 +81,6 @@ public class UserNamePanel extends Composite {
 	 * 
 	 */
 	public interface GirisListener {
-		void girisDurumu(boolean durum);
+		void girisDurumu(boolean durum, String userName);
 	}
 }
